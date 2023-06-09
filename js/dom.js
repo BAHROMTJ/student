@@ -1,4 +1,4 @@
-import {arr,daletStudent} from "./app.js";
+import {arr,daletStudent,editStudent} from "./app.js";
 
 
 
@@ -62,7 +62,9 @@ btndel.onclick = ()=>{
 console.log(elem.id);
     daletStudent(elem.id)
 }
-
+btnedit.onclick = ()=>{
+    editStudent(elem.id) 
+}
 })
 
 

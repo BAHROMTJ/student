@@ -53,7 +53,7 @@ async function addStudent(student) {
 
 async function daletStudent(id) {
     try {
-        let{data} = await axios.dalet(`${url}/${id}`);
+        let{data} = await axios.delete(`${url}/${id}`);
     getStudents()
         console.log(data);
     } catch (error) {
@@ -61,10 +61,20 @@ async function daletStudent(id) {
     }
 }
 
-
+async function editStudent(id) {
+let dialogedit=document.querySelector(".dialogedit")
+dialogedit.show()
+    try {
+        let{data} = await axios.put(`${url}/${id}`);
+    getStudents()
+        console.log(data);
+    } catch (error) {
+        
+    }
+}
 
 export {
     arr,
     daletStudent,
-
+    editStudent,
 }
