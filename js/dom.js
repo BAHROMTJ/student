@@ -32,6 +32,11 @@ tdhistory.innerHTML=elem.hist;
 
 tdart.innerHTML=elem.art;
 
+if(elem.points>80) {
+    tdpoints.style.backgroundColor="green";
+}
+
+
 tdpoints.innerHTML=elem.points;
 
 
