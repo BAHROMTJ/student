@@ -35,6 +35,9 @@ tdart.innerHTML=elem.art;
 if(elem.points>80) {
     tdpoints.style.backgroundColor="green";
 }
+if(elem.points<80) {
+    tdpoints.style.backgroundColor="red";
+}
 
 
 tdpoints.innerHTML=elem.points;
