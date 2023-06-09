@@ -1,0 +1,40 @@
+table, th, td{
+text-align: center;
+   
+border-collapse: collapse;
+padding: 10px 20px;
+}
+
+
+th {
+font-size: 20px;
+background-color: rgb(5, 172, 116);
+color: aliceblue;
+}
+
+
+th:nth-child(2){
+ 
+    width: 150px;
+}
+
+table tr:nth-child(even) {
+    background: #e6e3e3;
+}
+table{
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    border: 1px solid black;
+}
+
+input{
+
+    width: 120px;
+}
+
+.contener{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
